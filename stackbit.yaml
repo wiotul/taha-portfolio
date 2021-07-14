@@ -1,0 +1,28 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+nodeVersion: '12'
+publishDir: public
+pagesDir: content/projects
+models:
+  project:
+    type: page
+    label: Project
+    match: '**/*'
+    fields:
+      - type: string
+        name: slug
+        label: Slug
+      - type: image
+        name: cover
+        label: Cover
+      - type: date
+        name: date
+        label: Date
+      - type: string
+        name: title
+        label: Title
+      - type: list
+        name: areas
+        label: Areas
+        items:
+          type: string
